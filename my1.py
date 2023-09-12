@@ -1,5 +1,5 @@
 import math
-
+print()
 a = []
 b = []
 a.append(4.5)
