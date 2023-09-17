@@ -108,3 +108,19 @@ for i in a:
 print(count)
 
 # Задание 8
+n = int(input("Кол-во человек: "))
+k = int(input("Какое число в считалке? "))
+print(f"Значит, выбывает каждый {k}-й человек")
+start = 0
+people = list(range(1, n+1))
+
+while len(people) > 1:
+    print(f"Текущий круг людей: {people}")
+    a = start % len(people)
+    print('Начало счёта с номера: ', people[a])
+    start = (a + k - 1) % len(people)
+    print('Выбывает человек под номером', people[start])
+    people.remove(people[start])
+print(f"Остался человек под номером {people}")
+
+# Задание 9
