@@ -141,3 +141,21 @@ for i in range(1,k+1):
 print("Баланс друзей:")
 for i, j in sl.items():
     print(f"{i}:{j}")
+
+#Задание 10
+n = int(input("Кол-во чисел: "))
+a = []
+b = []
+for i in range(n):
+    number = input("Число: ")
+    a.append(number)
+    b.append(number)
+print(f"Последовательность: {a}")
+
+b.reverse()
+
+while a[-1] == b[0]:
+        b.pop(0)
+
+print(f"Нужно приписать чисел: {len(b)}")
+print(f"Сами числа: {b}")
