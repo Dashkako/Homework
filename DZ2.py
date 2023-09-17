@@ -124,3 +124,20 @@ while len(people) > 1:
 print(f"Остался человек под номером {people}")
 
 # Задание 9
+n = int(input("Кол-во друзей: "))
+k = int(input("Кол-во долговых расписок? "))
+sl = dict()
+
+for i in range(1, n+1):
+    sl[i] = 0
+print(sl)
+for i in range(1,k+1):
+    print(f"{i}-я расписка")
+    a = int(input("Кому:"))
+    b = int(input("От кого:"))
+    c = int(input("Сколько:"))
+    sl[a] -= c
+    sl[b] += c
+print("Баланс друзей:")
+for i, j in sl.items():
+    print(f"{i}:{j}")
