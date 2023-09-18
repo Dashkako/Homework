@@ -164,8 +164,10 @@ print(f"Последовательность: {a}")
 
 b.reverse()
 
-while a[-1] == b[0]:
+for i in a:
+    while i[-1] == b[0]:
         b.pop(0)
+
 
 print(f"Нужно приписать чисел: {len(b)}")
 print(f"Сами числа: {b}")
