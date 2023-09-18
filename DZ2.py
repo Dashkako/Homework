@@ -81,12 +81,22 @@ for j in range(n):
 print(f"Общее время звучания песен: {time}")
 
 # Задание 6
-list1 = list(input("Ведите три числа "))
-list2 = list(input("Ведите семь чисел "))
-a = list1 + list2
-b = set(a)
+list1 = []
+list2 = []
+
+for i in range(1, 3+1):
+    a = int(input(f"Введите {i}-е число для первого списка: "))
+    list1.append(a)
+for i in range(1, 7+1):
+    a = int(input(f"Введите {i}-е число для второго списка: "))
+    list2.append(a)
+
 print(f"Первый список: {list1}")
 print(f"Второй список: {list2}")
+
+a = list1 + list2
+b = set(a)
+
 print(f"Новый первый список с уникальными элементами: {list(b)}")
 
 # Задание 7
