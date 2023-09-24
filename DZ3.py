@@ -82,6 +82,19 @@ print(result)
 print(deshifr(result, num))
 
 #Задание 6
+count = int(input("Введите количество чисел в списке: "))
+nums = [int(input("Введите число: ")) for a in range(count)]
+def lists(count:int, nums:list)->tuple:
+    otr = list()
+    not_otr = list()
+    for i in nums:
+        if i < 0:
+            otr.append(i)
+        else:
+            not_otr.append(i)
+    return sorted(otr, reverse=True), sorted(not_otr)
+
+print(lists(3, nums))
 
 #Задание 7
 stroc = str(input("Введите строку: "))
