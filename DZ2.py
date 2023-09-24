@@ -106,7 +106,7 @@ a = []
 b = []
 count = 0
 for i in range(n):
-    con = int(input(f"Размер {i+1}-й пары: "))
+    con = int(input(f"Размер {i + 1}-й пары: "))
     a.append(con)
 for j in range(m):
     chel = int(input(f"Размер ноги  {j + 1}-го человека: "))
